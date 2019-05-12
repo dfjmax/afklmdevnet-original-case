@@ -1,21 +1,36 @@
-# Compiled class file
+# Maven generated files
+**/target
+**/build
+**/.gradle
+/MANIFEST.MF
+
+# Compiled files
 *.class
 
-# Log file
-*.log
-
-# Package Files #
-*.war
-*.nar
-*.ear
+# Packages
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.zip
-*.tar.gz
-*.rar
 
-# Idea Files
-hs_err_pid*
-.idea
-.gradle
-*.iws
-*.ipr
+# Eclipse files
+*.classpath
+*.project
+*.settings
+.checkstyle
+/bin
+
+# IntelliJ IDEA files
+.idea/
 *.iml
+*.ipr
+*.log
+*.iws
+/.metadata
+/Servers
+
+# Frontend files
+/**/node_modules
+/**/.gulp-cache
+/**/jspm_packages
+/**/dist
+/devnet-core-ui/src/client/public
