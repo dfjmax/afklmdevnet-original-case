@@ -22,6 +22,8 @@ Instructions
 
 - Start frontend with: `ng serve` from the frontend directory.
 
+- View the application in the browser: http://localhost:4200
+
 Solution Description
 =================
 I was not able to complete all the requirements due to my time availability, so I gave priority
