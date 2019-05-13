@@ -24,11 +24,13 @@ Instructions
 
 - View the application in the browser: http://localhost:4200
 
-Solution Description
+Solution Description: 
 =================
-I was not able to complete all the requirements due to my time availability, so I gave priority
-to implement a very basic backend that communicates with the Api Mock. 
-Also a very basic UI was implemented using AngularJS 7 + Angular Material to perform the fares search.
+Stack: Spring Boot Rest Backend + Angular 7 + Angular Material
+
+I was not able to finish with all the requirements due to my time availability, so I gave priority
+to implement a very basic backend that communicates with the Api Mock and a very basic UI 
+with AngularJS 7 + Angular Material to perform the fares search.
 
 Pending Tasks
 =================
@@ -36,5 +38,6 @@ Pending Tasks
 - Integrate AngularJS build with gradle.
 - All of the bonus points.
 - Improve error handling when communicating with the Api Mock.
-- Add more test coverage.
+- Add more unit tests coverage + integration tests.
 - Improve JSON HAL response handling.
+- Add automated tests in the angular project.
