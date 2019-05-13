@@ -27,11 +27,14 @@ Instructions
 Solution Description
 =================
 I was not able to complete all the requirements due to my time availability, so I gave priority
-to implement a very basic backend that communicates with the api mock. And also a very basic UI
-implemented with AngularJS 7 + Angular Material.
+to implement a very basic backend that communicates with the Api Mock. 
+Also a very basic UI was implemented using AngularJS 7 + Angular Material to perform the fares search.
 
 Pending Tasks
 =================
 - Application usage statistics.
 - Integrate AngularJS build with gradle.
 - All of the bonus points.
+- Improve error handling when communicating with the Api Mock.
+- Add more test coverage.
+- Improve JSON HAL response handling.
