@@ -4,6 +4,7 @@ import com.afkl.cases.df.model.Airport;
 import com.afkl.cases.df.service.AirportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.PagedResources;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
  *
  * @author dfjmax
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(path = "/api/airports", produces = APPLICATION_JSON_VALUE)
 public class AirportController {

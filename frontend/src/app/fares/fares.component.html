@@ -1,0 +1,39 @@
+<form class="fares-form" #faresForm="ngForm" (ngSubmit)="findFare(faresForm)">
+
+  <mat-form-field class="half-width">
+    	<input type="text" placeholder="Airport From" aria-label="Airport From" 
+    		matInput [formControl]="airportFrom" [matAutocomplete]="airFrom" required>
+    	<mat-autocomplete #airFrom="matAutocomplete">
+		    <mat-option *ngFor="let option of filteredAirportsFrom" [value]="option.code">
+		    	{{ '(' + option.code + ') ' + option.name}}
+      		</mat-option>
+    	</mat-autocomplete>
+  	</mat-form-field>
+
+  	<mat-form-field class="half-width">
+		<input type="text" placeholder="Airport To" aria-label="Airport To" 
+			matInput [formControl]="airportTo" [matAutocomplete]="airTo" required>
+    	<mat-autocomplete #airTo="matAutocomplete">
+      	<mat-option *ngFor="let option of filteredAirportsTo" [value]="option.code">
+        	{{ '(' + option.code + ') ' + option.name}}
+      	</mat-option>
+    	</mat-autocomplete>
+  	</mat-form-field>
+
+	<button mat-button color="primary" type="submit">Find Fare
+		<mat-icon *ngIf="isLoading"><mat-spinner color="accent" diameter="20"></mat-spinner></mat-icon>
+	</button>
+
+</form>
+
+<div class="fare" *ngIf="fareDetail">
+	<p>
+		Origin: {{ fareDetail.origin.code + ' - ' + fareDetail.origin.name }}
+	</p>
+	<p>
+		Destination: {{ fareDetail.destination.code + ' - ' + fareDetail.destination.name }}
+	</p>
+	<p>
+		Price: {{ fareDetail.fare.amount + ' ' + fareDetail.fare.currency }}
+	</p>
+</div>
